@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Opportunities Hub</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<nav class="navbar">
+  <h1>Opportunities Hub</h1>
+  <ul>
+    <li><a href="index.html">All</a></li>
+    <li><a href="competitions.html">Competitions</a></li>
+    <li><a href="clubs.html">Clubs</a></li>
+    <li><a href="events.html">Events</a></li>
+  </ul>
+</nav>
+
+<section class="controls">
+  <input type="text" id="searchInput" placeholder="Search opportunities..." />
+
+  <select id="typeFilter">
+    <option value="all">All Types</option>
+    <option value="competition">Competition</option>
+    <option value="club">Club</option>
+    <option value="event">Event</option>
+  </select>
+
+  <select id="interestFilter">
+    <option value="all">All Interests</option>
+    <option value="technology">Technology</option>
+    <option value="science">Science</option>
+    <option value="leadership">Leadership</option>
+    <option value="sports">Sports</option>
+  </select>
+</section>
+
+<main class="cards-container">
+
+  <div class="card" data-type="competition" data-interest="technology">
+    <h2>Hackathon Indonesia</h2>
+    <p>National coding competition.</p>
+    <button onclick="openPopup(
+      'Hackathon Indonesia',
+      'Students collaborate to build tech solutions.',
+      'Grades 9–12',
+      '15 March 2026',
+      'https://example.com'
+    )">Learn More</button>
+  </div>
+
+  <div class="card" data-type="club" data-interest="science">
+    <h2>Science Club</h2>
+    <p>Weekly experiments and research.</p>
+    <button onclick="openPopup(
+      'Science Club',
+      'Hands-on experiments and competitions.',
+      'All students',
+      'Every Friday',
+      'https://example.com'
+    )">Learn More</button>
+  </div>
+
+  <div class="card" data-type="event" data-interest="leadership">
+    <h2>Youth Leadership Conference</h2>
+    <p>Leadership & communication skills.</p>
+    <button onclick="openPopup(
+      'Youth Leadership Conference',
+      'Workshops and keynote speakers.',
+      'Grades 8–12',
+      '10 April 2026',
+      'https://example.com'
+    )">Learn More</button>
+  </div>
+
+  <div class="card" data-type="competition" data-interest="science">
+    <h2>Science Fair</h2>
+    <p>Research-based competition.</p>
+    <button onclick="openPopup(
+      'Science Fair',
+      'Present original research projects.',
+      'All grades',
+      '30 March 2026',
+      'https://example.com'
+    )">Learn More</button>
+  </div>
+
+</main>
+
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h2 id="popupTitle"></h2>
+    <p id="popupDescription"></p>
+    <p><strong>Eligibility:</strong> <span id="popupEligibility"></span></p>
+    <p><strong>Date / Deadline:</strong> <span id="popupDate"></span></p>
+    <a id="popupLink" target="_blank">Visit Website</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
