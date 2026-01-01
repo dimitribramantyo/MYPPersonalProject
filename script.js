@@ -34,6 +34,12 @@ if (interestFilter) {
   interestFilter.addEventListener("change", filterCards);
 }
 
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      closePopup();
+    }
+  });
+
 function openPopup(title, description, eligibility, date, link) {
   document.getElementById("popupTitle").textContent = title;
   document.getElementById("popupDescription").textContent = description;
