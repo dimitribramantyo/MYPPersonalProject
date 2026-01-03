@@ -42,7 +42,7 @@ document.addEventListener("keydown", (e) => {
 
 function openPopup(title, description, eligibility, date, link) {
   document.getElementById("popupTitle").textContent = title;
-  document.getElementById("popupDescription").textContent = description;
+  document.getElementById("popupDescription").innerHTML = description;
   document.getElementById("popupEligibility").textContent = eligibility;
   document.getElementById("popupDate").textContent = date;
   document.getElementById("popupLink").href = link;
