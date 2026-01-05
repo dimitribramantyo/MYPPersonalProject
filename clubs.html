@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Opportunities Hub</title>
+  <title>OpportunitasKu</title>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 
 <nav class="navbar">
-  <h1>Opportunities Hub</h1>
+  <h1>OpportunitasKu</h1>
   <ul>
     <li><a href="index.html">All</a></li>
     <li><a href="competitions.html">Competitions</a></li>
@@ -20,13 +20,6 @@
 
 <section class="controls">
   <input type="text" id="searchInput" placeholder="Search opportunities..." />
-
-  <select id="typeFilter">
-    <option value="all">All Types</option>
-    <option value="competition">Competition</option>
-    <option value="club">Club</option>
-    <option value="event">Event</option>
-  </select>
 
   <select id="interestFilter">
     <option value="all">All Interests</option>
@@ -47,7 +40,8 @@
       'Hands-on experiments and competitions.',
       'All students',
       'Every Friday',
-      'https://example.com'
+      'https://example.com',
+      null
     )">Learn More</button>
   </div>
 
@@ -57,6 +51,7 @@
   <div class="popup-content">
     <span class="close" onclick="closePopup()">&times;</span>
     <h2 id="popupTitle"></h2>
+    <img id="popupImage" class="popup-image"/>
     <div id="popupDescription"></div>
     <p><strong>Eligibility:</strong> <span id="popupEligibility"></span></p>
     <p><strong>Date / Deadline:</strong> <span id="popupDate"></span></p>
