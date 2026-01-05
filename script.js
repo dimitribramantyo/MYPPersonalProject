@@ -40,15 +40,29 @@ document.addEventListener("keydown", (e) => {
     }
   });
 
-function openPopup(title, description, eligibility, date, link) {
+function openPopup(title, description, eligibility, date, link, image) {
   document.getElementById("popupTitle").textContent = title;
   document.getElementById("popupDescription").innerHTML = description;
   document.getElementById("popupEligibility").textContent = eligibility;
-  document.getElementById("popupDate").textContent = date;
+  document.getElementById("popupDate").innerHTML = date;
   document.getElementById("popupLink").href = link;
+
+  const popupImage = document.getElementById("popupImage");
+
+  if (image) {
+    popupImage.src = image;
+    popupImage.style.display = "block";
+  } else {
+    popupImage.style.display = 'none'
+  }
+
   document.getElementById("popup").style.display = "block";
+
+  document.body.style.overflow = "hidden";
 }
 
 function closePopup() {
   document.getElementById("popup").style.display = "none";
+
+    document.body.style.overflow = "auto";
 }
