@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Opportunities Hub</title>
+  <title>OpportunitasKu</title>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 
 <nav class="navbar">
-  <h1>Opportunities Hub</h1>
+  <h1>OpportunitasKu</h1>
   <ul>
     <li><a href="index.html">All</a></li>
     <li><a href="competitions.html">Competitions</a></li>
@@ -39,18 +39,6 @@
 
 <main class="cards-container">
 
-  <div class="card" data-type="competition" data-interest="technology">
-    <h2>Hackathon Indonesia</h2>
-    <p>National coding competition.</p>
-    <button onclick="openPopup(
-      'Hackathon Indonesia',
-      'Students collaborate to build tech solutions.',
-      'Grades 9–12',
-      '15 March 2026',
-      'https://example.com'
-    )">Learn More</button>
-  </div>
-
   <div class="card" data-type="club" data-interest="science">
     <h2>Science Club</h2>
     <p>Weekly experiments and research.</p>
@@ -59,14 +47,17 @@
       'Hands-on experiments and competitions.',
       'All students',
       'Every Friday',
-      'https://example.com'
+      'https://example.com',
+      null
     )">Learn More</button>
   </div>
 
   <div class="card" data-type="event" data-interest="leadership">
+    <img src="images/SCMUN.png" alt="SCMUN 2026" class="card-image">
     <h2>Sekolah Ciputra Model United Nations</h2>
     <p>🦅🌏 On behalf of the Secretariat of Sekolah Ciputra Model United Nations, we are honored to invite students from Sekolah Ciputra to participate in SCMUN 2026, which will be held at <strong>Sekolah Ciputra, Surabaya Jan 30th - 1st Feb 2026</strong>.</p>
-    <p>This year’s conference, centered on the theme “Power, Access, and Accountability: Confronting the Digital Divide in a Rapidly Evolving World” aims to foster meaningful dialogue and global-minded leadership among youth through high-quality debate, diplomacy, and collaboration.</p>    <button onclick="openPopup(
+    <p>This year’s conference, centered on the theme <strong>“Power, Access, and Accountability: Confronting the Digital Divide in a Rapidly Evolving World” </strong>aims to foster meaningful dialogue and global-minded leadership among youth through high-quality debate, diplomacy, and collaboration.</p>    
+    <button onclick="openPopup(
       'Sekolah Ciputra Model United Nations',
       `
       <p>We are pleased to announce that <strong>Delegate</strong> registration is now open, and we warmly welcome applicants from Sekolah Ciputra to apply.</p>
@@ -77,26 +68,34 @@
       `,
       'Grades 7–12',
       'Jan 30th - 1st Feb 2025',
-      'https://docs.google.com/forms/d/e/1FAIpQLSdVa761NAlp8XaGAA_8EDnzVI4WHOhoJv07WeuwDIDBORux2A/viewform?usp=sharing&ouid=101268280779149583807 '
+      'https://docs.google.com/forms/d/e/1FAIpQLSdVa761NAlp8XaGAA_8EDnzVI4WHOhoJv07WeuwDIDBORux2A/viewform?usp=sharing&ouid=101268280779149583807 ',
+      'images/SCMUN.png'
     )">Learn More</button>
   </div>
 
-  <div class="card" data-type="competition" data-interest="science">
-    <h2>Science Fair</h2>
-    <p>Research-based competition.</p>
+   <div class="card" data-type="event" data-interest="leadership">
+    <img src="images/SDG.png" alt="The SDG's" class="card-image">
+    <h2>SA/CAS Opportunity – SDGs Dialogue Series 2026 on Education (with Generation Global)</h2>
+    <p>We are excited to announce a new <strong>Service as Action (SA)  or Creativity, Activity and Service (CAS)</strong> opportunity through our <strong>collaboration with Generation Global.</strong></p>
     <button onclick="openPopup(
-      'Science Fair',
-      'Present original research projects.',
-      'All grades',
-      '30 March 2026',
-      'https://example.com'
+      'SA/CAS Opportunity – SDGs Dialogue Series 2026 on Education (with Generation Global)',
+      `
+      <p>Generation Global is the International Baccalaureate’s global citizenship programme, where students aged 13-17 can learn and practise future-ready skills through dialogue spaces and video conferences with peers worldwide. Students can practise active listening, global communication, and critical thinking by engaging in dialogue on global topics. This activity is part of the SDGs Dialogue Series 2026, focusing on Education. </p>
+      <p>By participating, you will develop the SA/CAS Learning Outcome of Awareness, as you engage with global issues, explore challenges in education, and reflect on your role as a responsible global citizen.</p>
+      <p>The 60-minute dialogue session, including preparation and introduction, will be held on Thursday, 22 January 2026, at Period 5 & 6 (1 PM - 3 PM) in the LRC. During the dialogue session, you will join the live discussion, listen to speakers, and connect with participants from different backgrounds who are passionate about improving education worldwide. You will get a certificate also after joining the dialogue and completing the reflection. The deadline to confirm your participation by filling out the registration form is 15 January 2026 at 3 PM, or the quota is filled. </p>
+      <p>If you are interested in taking part, please register through the Google Form below. After you register, I will send you the link to activate your Global Generation account to join this activity to complete the task requirements to get a certificate. Please be aware, the quota is only 30 students.</p>
+      `,
+      'Grades 7–12',
+      'January 22 2025',
+      'https://forms.gle/mUWNGRYV6BNGPdrS9 ',
+      'images/SDG.png'
     )">Learn More</button>
   </div>
-
 
   <div class="card" data-type="event" data-interest="sports">
+    <img src="images/colorfest.jpg" alt="COLORFEST 2026" class="card-image">
     <h2>ColourFest 🌈</h2>
-    <p>Colourfest 2026 is coming! Join us on January 10, from 7 AM to 12 PM in the afternoon, for a morning packed with excitement and color.🌟</p>
+    <p>Colourfest 2026 is coming! Join us on <strong>January 10, from 7 AM to 12 PM in the afternoon</strong>, for a morning packed with excitement and color.🌟</p>
     <button onclick="openPopup(
         'ColourFest 🌈',
   `
@@ -106,21 +105,84 @@
     <li><strong>Standard</strong> – Rp 25.000<br>Unlimited access to the running field</li>
     <li><strong>Silver</strong> – Rp 45.000<br>Running field access, 3 colored powder packets, 1× Slip-n-Slide</li>
     <li><strong>Gold</strong> – Rp 75.000<br>Running field access, 3 powder packets, 3 game coupons, 1× Slip-n-Slide</li>
-    <li><strong>Platinum</strong> – Rp 125.000<br>Includes sling bag, t-shirt, goggles, sponsored items, unlimited Slip-n-Slide</li>
+    <li><strong>Platinum</strong> – Rp 125.000<br>Includes sling bag, t-shirt, goggles, sponsored items, unlimited Slip-n-Slide</li>,
   </ul>
   `,
   'Grades 7–12',
   'January 10, 7 AM – 12 PM',
-  'https://forms.gle/uuBETLAxyN68LrB87'
+  'https://forms.gle/uuBETLAxyN68LrB87',
+  'images/colorfest.jpg'
     )">Learn More</button>
   </div>
   
+   <div class="card" data-type="competitions" data-interest="science">
+    <img src="images/POSTER NOPEC 2026 A4.png" alt="COLORFEST 2026" class="card-image">
+    <h2> NOPEC 2026 – National Olympiad of Chemical Engineering</h2>
+    <p>The National Olympiad of Chemical Engineering (NOPEC) 2026 is a nationwide competition organized by the Department of Chemical Engineering, Institut Teknologi Sepuluh Nopember (ITS). This olympiad is open to Senior High School / Vocational High School students (Grade 10–12) across Indonesia.</p>
+    <button onclick="openPopup(
+        'NOPEC 2026 – National Olympiad of Chemical Engineering',
+        `
+        <p>NOPEC 2026 is designed to challenge students’ analytical thinking and problem-solving skills in the fields of:</p>
+
+        <ul>
+          <li>Science</li>
+          <li>Technology</li>
+          <li>Chemical Engineering</li>
+          <li>Food Technology</li>
+        </ul>
+
+        <p>NOPEC 2026 is designed to challenge students’ analytical thinking and problem-solving skills in the fields of:</p>
+
+        <p>Theme: “Flowing Innovation Beyond Boundaries: Empowering Fluid Thinkers through Chemical Solutions for a Sustainable Revolution”</p>
+        
+        <p>Benefits:</p>
+        
+        <ul>
+          <li>National-level certificate</li>
+          <li>Free Chemical Engineering e-books</li>
+          <li>Cash prizes</li>
+          <li>Free company visit for finalists</li>
+          <li>Prize pool up to Rp 7,000,000+</li>
+          <li>Free pass to Chemical Engineering & Food Technology ITS</li>
+        </ul>
+
+        <p>For further inquiries (WhatsApp only): 085743401220 (NOPEC 2026)</p>
+        `,
+        '2 studens per team (from the same school). Registration fee: 120,000 per team',
+
+        `
+        <ul>
+          <li>Registration Open: 24 November 2025 – 14 January 2026</li>
+
+          <li>Open House: 11 January 2026</li>
+
+          <li>Try Out Preparation: 14–15 January 2026</li>
+
+          <li>Preliminary Round: 17–18 January 2026</li>
+
+          <li>Quarter Final: 19 January 2026</li>
+
+          <li>Semifinal: 21–30 January 2026</li>
+
+          <li>Grand Final: 7–8 February 2026</li>
+
+          <li>Company Visit & Closing Ceremony: 8 February 2026</li>
+
+          <li>SNBT Try Out: 14–28 February 2026</li>
+        </ul>
+  `,
+  'https://www.chernival.id',
+  'images/POSTER NOPEC 2026 A4.png'
+    )">Learn More</button>
+  </div>
+
 </main>
 
 <div id="popup" class="popup">
   <div class="popup-content">
     <span class="close" onclick="closePopup()">&times;</span>
     <h2 id="popupTitle"></h2>
+    <img id="popupImage" class="popup-image"/>
     <div id="popupDescription"></div>
     <p><strong>Eligibility:</strong> <span id="popupEligibility"></span></p>
     <p><strong>Date / Deadline:</strong> <span id="popupDate"></span></p>
